@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Demo Video
+ [Watch demo here](https://www.dropbox.com/scl/fi/5wk0xgsbsaesij83x41sk/12.05.2025_17.25.00_REC.mp4?rlkey=he21namaw6re3sz987iw1d5b3&st=5oagbwo8&dl=0)
+
 ## Getting Started
 
 First, create a `.env.local` file in the root of your project with the following entries:
