@@ -25,21 +25,21 @@ export const MainLayoutHeaderBalances: React.FC = ({}) => {
               {
 
                 title: "SHIPMENTS",
-                value: trade.shipments.totalItems
+                value: trade?.shipments?.totalItems ?? 0
 
               },
 
               {
 
                 title: "CARRIERS",
-                value:  trade.carriers.items.length
+                value:  trade?.carriers?.items?.length ?? 0
 
               },
 
               {
 
                 title: "PRODUCTS",
-                value: trade.products.items.length
+                value: trade?.products?.items?.length ?? 0
 
               },
 
