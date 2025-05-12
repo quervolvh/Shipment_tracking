@@ -1,0 +1,109 @@
+.add-shipment {
+
+    @extend %body-width-and-padding;
+    margin: 0;
+    margin-left: auto;
+    background: white;
+    height: 100vh;
+    max-width: 800px;
+
+    &-title {
+
+        h2 {
+
+            @include font-size(large);
+            margin-bottom: 10px;
+
+        }
+
+        p {
+
+            font-weight: 200;
+
+        }
+
+    }
+
+    &-form {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        max-width: 650px !important;
+
+        .MuiInputBase-root,
+        .MuiPickersTextField-root {
+
+            margin-bottom: 20px;
+            font-size: 15px;
+
+        }
+
+    }
+
+    &-actions {
+
+        margin-top: 10px;
+    
+        button {
+
+            @include font-size-override(x-small);
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:first-child {
+
+                background: color(primary);
+                margin-right: 20px;
+
+            }
+
+        }
+
+    }
+
+    &-fill &-actions {
+
+        margin-top: 30px;
+
+    }
+
+    &-fill .form-field-error-v {
+
+        margin-top: 20px;
+
+    }
+
+    &-fill &-actions button {
+
+       background: unset !important;
+
+    }
+
+    .view-formatter {
+
+        flex-direction: column;
+
+    }
+
+    .view-formatter-title-box p {
+
+        @include font-size-override(x-small);
+        color: color(primary);
+
+    }
+
+}
+
+.MuiMenuItem-root {
+
+    @include font-size-override(x-small);
+
+}
+
+.MuiSelect-select,
+.MuiPickersSectionList-root {
+
+    @include font-size-override(x-small);
+
+}

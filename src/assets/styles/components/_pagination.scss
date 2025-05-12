@@ -1,0 +1,35 @@
+.pagination {
+
+    border-radius: 64px;
+    padding: 10px 15px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            border-radius: 100%;
+            padding: 10px;
+            min-width: 35px;
+            height: 35px;
+            min-height: 35px;
+
+            &.active {
+                @extend %box-shadow;
+                background: color(primary);
+                color: color(clear-white);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+//1. Configurations and helpers
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/misc';
+@import 'abstracts/mics_';
+@import 'abstracts/modern-normalize';
+@import 'abstracts/extends';
+
+// 2. Base
+@import 'base/base';
+@import 'base/helpers';
+
+//4. Components
+@import 'components/component-header';
+@import 'components/component-holder';
+@import 'components/footer';
+@import 'components/form-field/index';
+@import 'components/item-type-toggle';
+@import 'components/pagination';
+@import 'components/table';
+@import 'components/toast';
+@import 'components/view-formatter';
+
+//3. Layout
+@import 'layout/mainLayout';
+@import 'layout/landingLayout';
+
+//5. Pages
+@import 'pages/landing/landing';
+@import 'pages/landing/add-shipment';
+
+//6. Transitions
+@import 'transitions/content-loader';
+@import 'transitions/fadeIn';
+@import 'transitions/landing-trans';
+@import 'transitions/rebound';
+@import 'transitions/router-scope';
+@import 'transitions/scale-out';

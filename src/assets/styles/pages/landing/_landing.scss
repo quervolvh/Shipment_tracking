@@ -1,0 +1,139 @@
+.landing {
+
+  &-side-menu {
+
+    background: color(clear-white);
+
+    .form-field {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  &-board {
+
+    display: flex;
+    margin-bottom: 10px;
+    padding: 7px 25px;
+    background: color(clear-white);
+
+    .item-type-toggle:not(:first-child) {
+
+      margin-top: 10px;
+
+    }
+
+    &-carrier {
+
+      .MuiInputBase-root {
+
+        border-radius: 18px;
+
+      }
+
+    }
+
+  }
+
+  &-products {
+
+    @include media-query(mobile) {
+
+      overflow-x: scroll;
+
+    }
+
+  }
+
+  &-products,
+  &-trade-log {
+
+    display: flex;
+    flex-direction: column;
+
+    &-left,
+    &-right {
+
+      width: 50%;
+
+    }
+
+    &-left {
+
+      margin-right: 1%;
+      width: 49%;
+
+    }
+
+
+    .table-component  {
+
+      @include media-query(mobile) {
+
+        overflow-x: scroll;
+
+      }
+
+      padding-top: 0;
+      max-height: calc(100vh - 250px);
+      overflow-y: scroll;
+
+      button {
+
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        background: transparent;
+        color: #52965E;
+
+      }
+
+      td:nth-child(3) {
+
+        color: #52965E;
+
+      }
+
+    }
+
+    thead {
+
+      position: sticky;
+      top: 0;
+      background: white;
+
+    }
+
+    &-right button,
+    &-right td:nth-child(3) {
+
+      color: color(primary) !important;
+
+    }
+
+  }
+
+  &-trade-log {
+
+    width: 100%;
+
+    &-heading {
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 18px 20px;
+      background: color(clear-white);
+
+    }
+
+    div {
+
+      width: 100%;
+
+    }
+
+  }
+
+}

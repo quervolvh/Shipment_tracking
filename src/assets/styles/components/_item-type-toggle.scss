@@ -1,0 +1,40 @@
+.item-type-toggle {
+
+  @include media-query(mobile) {
+
+    overflow-x: scroll;
+
+  }
+
+  display: flex;
+  height: max-content;
+
+  p {
+
+    @media only screen and (max-width: 300px) {
+      font-size: 4vw;
+    }
+
+    @include media-query(mobile) {
+
+      min-width: max-content;
+
+    }
+
+    @include font-size(small);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 18px;
+    padding: 10px 20px;
+    width: max-content;
+    background: #F8FAFB;
+    text-align: left;
+
+    &.active {
+      background: color(primary);
+      color: color(clear-white);
+    }
+  }
+}

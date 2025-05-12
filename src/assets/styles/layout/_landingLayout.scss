@@ -1,0 +1,61 @@
+.landingLayout {
+    min-height: 100vh;
+    background: color(clear-white);
+
+    &-header-mobile {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+
+        &-exp {
+            @include media-query(tablet) {
+                width: 50%;
+            }
+
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: white;
+            transition: 0.5s ease;
+
+            &.expanded {
+                right: 0;
+            }
+        }
+
+        img {
+            width: 70px;
+        }
+
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.05);
+            padding: 25px 25px 17px;
+
+            i {
+                font-size: 20px;
+                color: color(dark);
+            }
+        }
+
+        .main-layout-sideNav-item {
+
+            margin-bottom: 0;
+            padding-left: 0
+
+        }
+
+        a {
+            @include font-size(small);
+            display: block;
+            align-items: flex-start;
+        }
+    }
+
+}
